@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.header {
+    width: 100%;
+    height: 70px;
+    gap: 10px;
+    display: flex;
+    padding: 14px 100px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.header__logo {
+    color: var(--, #000);
+    font-family: 'Inter';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    margin: 0;
+}
+
+.header__search_img {
+    width: 18.823px;
+    height: 19.222px;
+    flex-shrink: 0;
+    position: absolute;
+    top: 25px;
+    left: 263px;
+}
+
+.header__search {
+    margin-left: 61px;
+    width: 346px;
+    height: 42px;
+    background-color: #EBEBEB;
+    border-radius: 10px;
+    border: 0;
+    padding-left: 50px;
+    box-sizing: border-box;
+}
+
+.header__nav {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header__nav_list {
+    list-style: none;
+    width: 408px;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    margin-left: 46;
+}
+
+.header__nav_list_link {
+    margin: 0;
+    text-decoration: none;
+    color: #000;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.header__nav_list_select {
+    border: none;
+    color: var(--, #000);
+    font-family: 'Inter';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.header__imgs {
+    list-style: none;
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    margin-left: 85px;
+    padding: 0;
+}
+
+.header__btn {
+    border-radius: 15px;
+    background: #000;
+    padding: 10px 30px;
+    margin-left: 51px;
+
+    color: #FFF;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.header__imgs_heart,.header__imgs_buy {
+    width: 24px;
+    height: 24px;
+    padding: 3px 2.5px;
+}
+
+.header__imgs_buy {
+    margin-left: 25px;
+}
