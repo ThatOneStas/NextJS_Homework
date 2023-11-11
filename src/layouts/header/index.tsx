@@ -1,12 +1,20 @@
 import React from 'react'
 import style from "./header.module.css"
+// link
+import Link from 'next/link'
+// imgs
+import Image from 'next/image'
+
+import Search from "@/assets/img/Search.png"
+import Heart from "@/assets/img/Heart.png"
+import Buy from "@/assets/img/Buy.png"
 
 
 const header = () => {
   return (
     <header className={style.header}>
-      <h1 className={style.header__logo}>Logo</h1>
-      <img className={style.header__search_img} src="/img/Search.png" alt="" />
+      <Link href={"/"} className={style.header__logo}>Logo</Link>
+      <Image className={style.header__search_img} src={Search} alt=""></Image>
       <input className={style.header__search} type="search" />
       <nav className={style.header__nav}>
         <ul className={style.header__nav_list}>
@@ -18,10 +26,10 @@ const header = () => {
             </select>
           </li>
           <li>
-            <a className={style.header__nav_list_link} href="">Про нас</a>
+          <Link href={"/about"} className={style.header__nav_list_link}>Про нас</Link>
           </li>
           <li>
-            <a className={style.header__nav_list_link} href="">Контакти</a>
+          <Link href="" className={style.header__nav_list_link}>Контакти</Link>
           </li>
           <li>
             <select className={style.header__nav_list_select} name="" id="">
@@ -34,10 +42,10 @@ const header = () => {
       </nav>
       <ul className={style.header__imgs}>
         <li>
-          <a href=""><img className={style.header__imgs_heart} src="/img/Heart.png" alt="" /></a>
+          <Link href=""><Image className={style.header__imgs_buy} src={Heart} alt=""></Image></Link>
         </li>
         <li>
-          <a href=""><img className={style.header__imgs_buy} src="/img/Buy.png" alt="" /></a>
+        <Link href=""><Image className={style.header__imgs_buy} src={Buy} alt=""></Image></Link>
         </li>
       </ul>
       <button className={style.header__btn}>Вхід</button>

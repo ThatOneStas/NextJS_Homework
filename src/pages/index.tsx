@@ -22,19 +22,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        Hello world!
-        <nav>
-          <ul>
-            <li><Link href="/about">About</Link></li>
-            <li><Link href="/news">News</Link></li>
-            <li></li>
-          </ul>
-        </nav>
-        {
-          data.map((e:any)=>{
-            return <Card data={e} key={e} />
-          })
-        }
+        
       </main>
     </>
   )
