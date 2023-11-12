@@ -1,9 +1,13 @@
 import Head from 'next/head'
+// link
 import Link from 'next/link'
-import styles from '@/styles/Home.module.css'
+import style from '@/styles/Home.module.css'
 // components
 import Card from '@/components/card'
+// imgs
+import Image from 'next/image'
 
+import Pngegg from "@/assets/img/pngegg (17) 1.png"
 
 export default function Home() {
   const data = [
@@ -22,7 +26,18 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        
+        <section className={style.hero}>
+          <h1 className={style.hero__title}>Xiaomi Mi Electric Scooter Essential Black</h1>
+          <p className={style.hero__text}>
+            Lorem ipsum dolor sit amet consectetur. Venenatis est lobortis commodo amet 
+            a ultrices. Aliquet dictum nisl natoque viverra platea blandit ac.
+           </p>
+          <button className={style.hero__btn}>Детальніше</button>
+          <Image className={style.hero__bg} src={Pngegg} alt=''></Image>
+        </section>
+        <section className=''>
+
+        </section>
       </main>
     </>
   )
