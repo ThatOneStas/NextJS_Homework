@@ -10,6 +10,8 @@ import Image from 'next/image'
 import Pngegg from "@/assets/img/pngegg (17) 1.png"
 import Pngegg_1 from "@/assets/img/pngegg (20) 1.png"
 import Pngegg_2 from "@/assets/img/pngegg (19).png"
+import Group from "@/assets/img/Group.png"
+import Logo from "@/assets/img/logo.png"
 
 export default function Home() {
   const data = [
@@ -50,54 +52,14 @@ export default function Home() {
             <h1 className={style.goods__categories_item}>Акції</h1>
           </div>
           <div className={style.goods__cart}>
-            <div className={style.goods__cart_item}>
-              <Image className={style.goods__cart_item_img} src={Pngegg_1} alt=''></Image>
-              <h1 className={style.goods__cart_item_title}>Xiaomi Mi Electric Scooter Essential Black</h1>
-              <p className={style.goods__cart_item_text}>19 000 ₴</p>
-              <button className={style.goods__cart_item_btn}>Купити</button>
-            </div>
-            <div className={style.goods__cart_item}>
-              <Image className={style.goods__cart_item_img} src={Pngegg_1} alt=''></Image>
-              <h1 className={style.goods__cart_item_title}>Xiaomi Mi Electric Scooter Essential Black</h1>
-              <p className={style.goods__cart_item_text}>19 000 ₴</p>
-              <button className={style.goods__cart_item_btn}>Купити</button>
-            </div>
-            <div className={style.goods__cart_item}>
-              <Image className={style.goods__cart_item_img} src={Pngegg_1} alt=''></Image>
-              <h1 className={style.goods__cart_item_title}>Xiaomi Mi Electric Scooter Essential Black</h1>
-              <p className={style.goods__cart_item_text}>19 000 ₴</p>
-              <button className={style.goods__cart_item_btn}>Купити</button>
-            </div>
-            <div className={style.goods__cart_item}>
-              <Image className={style.goods__cart_item_img} src={Pngegg_1} alt=''></Image>
-              <h1 className={style.goods__cart_item_title}>Xiaomi Mi Electric Scooter Essential Black</h1>
-              <p className={style.goods__cart_item_text}>19 000 ₴</p>
-              <button className={style.goods__cart_item_btn}>Купити</button>
-            </div>
-            <div className={style.goods__cart_item}>
-              <Image className={style.goods__cart_item_img} src={Pngegg_1} alt=''></Image>
-              <h1 className={style.goods__cart_item_title}>Xiaomi Mi Electric Scooter Essential Black</h1>
-              <p className={style.goods__cart_item_text}>19 000 ₴</p>
-              <button className={style.goods__cart_item_btn}>Купити</button>
-            </div>
-            <div className={style.goods__cart_item}>
-              <Image className={style.goods__cart_item_img} src={Pngegg_1} alt=''></Image>
-              <h1 className={style.goods__cart_item_title}>Xiaomi Mi Electric Scooter Essential Black</h1>
-              <p className={style.goods__cart_item_text}>19 000 ₴</p>
-              <button className={style.goods__cart_item_btn}>Купити</button>
-            </div>
-            <div className={style.goods__cart_item}>
-              <Image className={style.goods__cart_item_img} src={Pngegg_1} alt=''></Image>
-              <h1 className={style.goods__cart_item_title}>Xiaomi Mi Electric Scooter Essential Black</h1>
-              <p className={style.goods__cart_item_text}>19 000 ₴</p>
-              <button className={style.goods__cart_item_btn}>Купити</button>
-            </div>
-            <div className={style.goods__cart_item}>
-              <Image className={style.goods__cart_item_img} src={Pngegg_1} alt=''></Image>
-              <h1 className={style.goods__cart_item_title}>Xiaomi Mi Electric Scooter Essential Black</h1>
-              <p className={style.goods__cart_item_text}>19 000 ₴</p>
-              <button className={style.goods__cart_item_btn}>Купити</button>
-            </div>
+            <Card></Card>
+            <Card></Card>
+            <Card></Card>
+            <Card></Card>
+            <Card></Card>
+            <Card></Card>
+            <Card></Card>
+            <Card></Card>
           </div>
         </section>
         <section className={style.special_offer}>
@@ -108,6 +70,29 @@ export default function Home() {
             <h2 className={style.special_offer__prices_new}>16 999 ₴</h2>
           </div>
           <button className={style.special_offer__btn}>Детальніше</button>
+        </section>
+        <section className={style.recommended}>
+          <h1 className={style.recommended__title}>Рекомендовані товари</h1>
+          <div className={style.recommended__line}></div>
+          <div className={style.recommended__goods}>
+            <Card></Card>
+            <Card></Card>
+            <Card></Card>
+            <Card></Card>
+          </div>
+        </section>
+        <section className={style.brandmark}>
+          <h1 className={style.brandmark__title}>Торгові марки</h1>
+          <div className={style.brandmark__line}></div>
+          <div className={style.brandmark__logos}>
+            <Image className={style.brandmark__logos_fisrst} src={Group} alt=''></Image>
+            <Image className={style.brandmark__logos_second} src={Logo} alt=''></Image>
+            <Image className={style.brandmark__logos_fisrst} src={Group} alt=''></Image>
+            <Image className={style.brandmark__logos_second} src={Logo} alt=''></Image>
+            <Image className={style.brandmark__logos_fisrst} src={Group} alt=''></Image>
+            <Image className={style.brandmark__logos_second} src={Logo} alt=''></Image>
+            <Image className={style.brandmark__logos_fisrst} src={Group} alt=''></Image>
+          </div>
         </section>
         <form className={style.form}>
           <h1 className={style.form__title}>Виникли запитання?</h1>

@@ -1,24 +1,24 @@
 import React from 'react'
 // import styles
 import style from "./card.module.css"
+// imgs 
+import Image from 'next/image'
+
+import Scooter from "@/assets/img/pngegg (20) 1.png"
+
 // import "./index.css"
 interface Props{
-  key: any
-  data: {
-    title: string
-    description: string
-  }
+
 }
 
-const card = (props: Props) => {
-  const {title,description} = props.data
+const card = () => {
   return (
     <>
-        <div className={style.card}>
-            <h2>{title}</h2>
-            <p className={style.text}>
-                {description}
-            </p>
+        <div className={style.item}>
+              <Image className={style.item_img} src={Scooter} alt=''></Image>
+              <h1 className={style.item_title}>Xiaomi Mi Electric Scooter Essential Black</h1>
+              <p className={style.item_text}>19 000 ₴</p>
+              <button className={style.item_btn}>Купити</button>
         </div>
     </>
   )

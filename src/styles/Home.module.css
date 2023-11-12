@@ -49,6 +49,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    border: none;
 }
 
 .hero__bg {
@@ -176,6 +177,86 @@
 
 /* ------------------------------------------------------------------------------------------------ */
 
+
+.special_offer {
+    width: 100%;
+    height: 264px;
+    flex-shrink: 0;
+    background: #FFCF54;
+    position: relative;
+    padding: 28px 0px 0px 716px;
+    margin-bottom: 50px;
+}
+
+.special_offer__img {
+    position: absolute;
+    left: 247px;
+    top: -155px;
+    width: 379px;
+    height: 379px;
+    flex-shrink: 0;
+}
+
+.special_offer__title {
+    color: #000;
+    font-family: 'Inter';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    width: 618px;
+    margin: 0;
+    margin-bottom: 24px;
+}
+
+.special_offer__prices {
+    display: flex;
+    margin-bottom: 23px;
+}
+
+.special_offer__prices_old {
+    color: #000;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration-line: line-through;
+    margin: 0;
+}
+
+.special_offer__prices_new {
+    color: #E00;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    margin-left: 40px;
+}
+
+.special_offer__btn {
+    display: inline-flex;
+    padding: 10px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 15px;
+    background: #000;
+    cursor: pointer;
+    border: none;
+
+    color: #FFF;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+
 .form {
     width: 1190px;
     height: 146px;
@@ -265,80 +346,71 @@
 
 /* ------------------------------------------------------------------------------------------------ */
 
-
-.special_offer {
+.recommended {
     width: 100%;
-    height: 264px;
-    flex-shrink: 0;
-    background: #FFCF54;
-    position: relative;
-    padding: 28px 0px 0px 716px;
-    margin-bottom: 50px;
+    height: fit-content;
+    padding: 0 100px;
+    box-sizing: border-box;
+    margin-bottom: 100px;
 }
 
-.special_offer__img {
-    position: absolute;
-    left: 247px;
-    top: -155px;
-    width: 379px;
-    height: 379px;
-    flex-shrink: 0;
-}
-
-.special_offer__title {
+.recommended__title {
     color: #000;
     font-family: 'Inter';
-    font-size: 36px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
-    width: 618px;
     margin: 0;
-    margin-bottom: 24px;
+    margin-bottom: 22px;
 }
 
-.special_offer__prices {
+.recommended__line {
+    margin-bottom: 64px;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+}
+
+.recommended__goods {
+    width: 100%;
+    height: fit-content;
     display: flex;
-    margin-bottom: 23px;
+    justify-content: space-between;
 }
 
-.special_offer__prices_old {
+/* ------------------------------------------------------------------------------------------------ */
+
+.brandmark {
+    width: 100%;
+    height: fit-content;
+    padding: 0 100px;
+    box-sizing: border-box;
+    margin-bottom: 100px;
+}
+
+.brandmark__title {
     color: #000;
     font-family: 'Inter';
-    font-size: 18px;
+    font-size: 24px;
     font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    text-decoration-line: line-through;
-    margin: 0;
-}
-
-.special_offer__prices_new {
-    color: #E00;
-    font-family: 'Inter';
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
+    font-weight: 800;
     line-height: normal;
     margin: 0;
-    margin-left: 40px;
+    margin-bottom: 22px;
 }
 
-.special_offer__btn {
-    display: inline-flex;
-    padding: 10px 30px;
-    justify-content: center;
+.brandmark__line {
+    margin-bottom: 75px;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+}
+
+.brandmark__logos {
+    width: 100%;
+    height: fit-content;
+    display: flex;
     align-items: center;
-    gap: 10px;
-    border-radius: 15px;
-    background: #000;
-    cursor: pointer;
-    border: none;
-
-    color: #FFF;
-    font-family: 'Inter';
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+    justify-content: space-between;
 }
