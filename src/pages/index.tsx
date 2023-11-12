@@ -8,6 +8,8 @@ import Card from '@/components/card'
 import Image from 'next/image'
 
 import Pngegg from "@/assets/img/pngegg (17) 1.png"
+import Pngegg_1 from "@/assets/img/pngegg (20) 1.png"
+import Pngegg_2 from "@/assets/img/pngegg (19).png"
 
 export default function Home() {
   const data = [
@@ -35,9 +37,85 @@ export default function Home() {
           <button className={style.hero__btn}>Детальніше</button>
           <Image className={style.hero__bg} src={Pngegg} alt=''></Image>
         </section>
-        <section className=''>
-
+        <section className={style.goods}>
+          <div className={style.goods__categories}>
+            <h1 className={style.goods__categories_item}>Зброя</h1>
+            <div className={style.goods__categories_line}></div>
+            <h1 className={style.goods__categories_item}>Техніка</h1>
+            <div className={style.goods__categories_line}></div>
+            <h1 className={style.goods__categories_item_active}>Електросамокати</h1>
+            <div className={style.goods__categories_line}></div>
+            <h1 className={style.goods__categories_item}>Популярне</h1>
+            <div className={style.goods__categories_line}></div>
+            <h1 className={style.goods__categories_item}>Акції</h1>
+          </div>
+          <div className={style.goods__cart}>
+            <div className={style.goods__cart_item}>
+              <Image className={style.goods__cart_item_img} src={Pngegg_1} alt=''></Image>
+              <h1 className={style.goods__cart_item_title}>Xiaomi Mi Electric Scooter Essential Black</h1>
+              <p className={style.goods__cart_item_text}>19 000 ₴</p>
+              <button className={style.goods__cart_item_btn}>Купити</button>
+            </div>
+            <div className={style.goods__cart_item}>
+              <Image className={style.goods__cart_item_img} src={Pngegg_1} alt=''></Image>
+              <h1 className={style.goods__cart_item_title}>Xiaomi Mi Electric Scooter Essential Black</h1>
+              <p className={style.goods__cart_item_text}>19 000 ₴</p>
+              <button className={style.goods__cart_item_btn}>Купити</button>
+            </div>
+            <div className={style.goods__cart_item}>
+              <Image className={style.goods__cart_item_img} src={Pngegg_1} alt=''></Image>
+              <h1 className={style.goods__cart_item_title}>Xiaomi Mi Electric Scooter Essential Black</h1>
+              <p className={style.goods__cart_item_text}>19 000 ₴</p>
+              <button className={style.goods__cart_item_btn}>Купити</button>
+            </div>
+            <div className={style.goods__cart_item}>
+              <Image className={style.goods__cart_item_img} src={Pngegg_1} alt=''></Image>
+              <h1 className={style.goods__cart_item_title}>Xiaomi Mi Electric Scooter Essential Black</h1>
+              <p className={style.goods__cart_item_text}>19 000 ₴</p>
+              <button className={style.goods__cart_item_btn}>Купити</button>
+            </div>
+            <div className={style.goods__cart_item}>
+              <Image className={style.goods__cart_item_img} src={Pngegg_1} alt=''></Image>
+              <h1 className={style.goods__cart_item_title}>Xiaomi Mi Electric Scooter Essential Black</h1>
+              <p className={style.goods__cart_item_text}>19 000 ₴</p>
+              <button className={style.goods__cart_item_btn}>Купити</button>
+            </div>
+            <div className={style.goods__cart_item}>
+              <Image className={style.goods__cart_item_img} src={Pngegg_1} alt=''></Image>
+              <h1 className={style.goods__cart_item_title}>Xiaomi Mi Electric Scooter Essential Black</h1>
+              <p className={style.goods__cart_item_text}>19 000 ₴</p>
+              <button className={style.goods__cart_item_btn}>Купити</button>
+            </div>
+            <div className={style.goods__cart_item}>
+              <Image className={style.goods__cart_item_img} src={Pngegg_1} alt=''></Image>
+              <h1 className={style.goods__cart_item_title}>Xiaomi Mi Electric Scooter Essential Black</h1>
+              <p className={style.goods__cart_item_text}>19 000 ₴</p>
+              <button className={style.goods__cart_item_btn}>Купити</button>
+            </div>
+            <div className={style.goods__cart_item}>
+              <Image className={style.goods__cart_item_img} src={Pngegg_1} alt=''></Image>
+              <h1 className={style.goods__cart_item_title}>Xiaomi Mi Electric Scooter Essential Black</h1>
+              <p className={style.goods__cart_item_text}>19 000 ₴</p>
+              <button className={style.goods__cart_item_btn}>Купити</button>
+            </div>
+          </div>
         </section>
+        <section className={style.special_offer}>
+          <Image className={style.special_offer__img} src={Pngegg_2} alt=''></Image>
+          <h1 className={style.special_offer__title}>Xiaomi Mi Electric Scooter Essential Black</h1>
+          <div className={style.special_offer__prices}>
+            <h2 className={style.special_offer__prices_old}>19 000 ₴</h2>
+            <h2 className={style.special_offer__prices_new}>16 999 ₴</h2>
+          </div>
+          <button className={style.special_offer__btn}>Детальніше</button>
+        </section>
+        <form className={style.form}>
+          <h1 className={style.form__title}>Виникли запитання?</h1>
+          <input className={style.form__name} type="text" placeholder='Ваше ім’я'/>
+          <input className={style.form__phone} type="text" placeholder='Номер телефону'/>
+          <label className={style.form__label} htmlFor="submit">Залиште заявку і ми Вам передзвонимо</label>
+          <button className={style.form__submit} type="submit" name='submit'>Надіслати</button>
+        </form>
       </main>
     </>
   )

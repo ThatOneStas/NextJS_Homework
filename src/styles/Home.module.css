@@ -61,3 +61,284 @@
 }
 
 /* ------------------------------------------------------------------------------------------------ */
+
+.goods {
+    width: 100%;
+    height: fit-content;
+    padding: 33px 100px 0px 100px;
+    box-sizing: border-box;
+    margin-bottom: 247px;
+}
+
+.goods__categories {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: white, #FFF;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10);
+    margin-bottom: 33px;
+}
+
+.goods__categories_item {
+    margin: 0;
+    color:  #707070;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.goods__categories_item_active {
+    margin: 0;
+    color: #000;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.goods__categories_line {
+    width: 1px;
+    height: 40.5px;
+    flex-shrink: 0;
+    background-color: black;
+}
+
+.goods__cart {
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2);
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.goods__cart_item {
+    width: 295px;
+    height: 464px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10);
+    margin-bottom: 33px;
+}
+
+.goods__cart_item_img {
+    width: 100%;
+    height: 290px;
+}
+
+.goods__cart_item_title {
+    margin: 0;
+    margin-bottom: 15px;
+    color: #000;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.goods__cart_item_text {
+    margin: 0;
+    margin-bottom: 20px;
+    color: #989898;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.goods__cart_item_btn {
+    display: flex;
+    padding: 10px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 15px;
+    background: #000;
+    cursor: pointer;
+    color: #FFF;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border: none;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+
+.form {
+    width: 1190px;
+    height: 146px;
+    flex-shrink: 0;
+    margin: 0px auto 114px auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.form__title {
+    margin: 0 0 33px 0;
+    color: #000;
+    font-family: 'Inter';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.form__name {
+    width: 855px;
+    border: none;
+    border-bottom: black solid 1px;
+    color: black;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0 0 0 0;
+}
+
+.form__phone {
+    width: 855px;
+    border: none;
+    border-bottom: black solid 1px;
+    color: black;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 26px 0 0 0;
+}
+
+.form__label {
+    position: absolute;
+    top: 15px;
+    right: 0px;
+    width: 226px;
+    color: #000;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.form__submit {
+    position: absolute;
+    top: 96px;
+    right: 37px;
+    display: inline-flex;
+    padding: 10px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 15px;
+    background: #FFBA08;
+    border: none;
+
+    color: #000;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.form__submit:hover {
+    background: #cf9605;
+    transition: 0.2s;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+
+
+.special_offer {
+    width: 100%;
+    height: 264px;
+    flex-shrink: 0;
+    background: #FFCF54;
+    position: relative;
+    padding: 28px 0px 0px 716px;
+    margin-bottom: 50px;
+}
+
+.special_offer__img {
+    position: absolute;
+    left: 247px;
+    top: -155px;
+    width: 379px;
+    height: 379px;
+    flex-shrink: 0;
+}
+
+.special_offer__title {
+    color: #000;
+    font-family: 'Inter';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    width: 618px;
+    margin: 0;
+    margin-bottom: 24px;
+}
+
+.special_offer__prices {
+    display: flex;
+    margin-bottom: 23px;
+}
+
+.special_offer__prices_old {
+    color: #000;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration-line: line-through;
+    margin: 0;
+}
+
+.special_offer__prices_new {
+    color: #E00;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    margin-left: 40px;
+}
+
+.special_offer__btn {
+    display: inline-flex;
+    padding: 10px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 15px;
+    background: #000;
+    cursor: pointer;
+    border: none;
+
+    color: #FFF;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
