@@ -52,14 +52,18 @@ export default function Home() {
             <h1 className={style.goods__categories_item}>Акції</h1>
           </div>
           <div className={style.goods__cart}>
-            <Card></Card>
-            <Card></Card>
-            <Card></Card>
-            <Card></Card>
-            <Card></Card>
-            <Card></Card>
-            <Card></Card>
-            <Card></Card>
+            <Card key={"testKey"} title='Xiaomi Mi Electric Scooter' description='Швидкість > 20 км/г' id='test'></Card>
+            <Card key={"testKey"} title='Xiaomi Mi Electric Scooter Essential Black' description='19 000 ₴' id='test'></Card>
+            <Card key={"testKey"} title='Xiaomi Mi Electric Scooter' description='Швидкість > 20 км/г' id='test'></Card>
+            <Card key={"testKey"} title='Xiaomi Mi Electric Scooter Essential Black' description='19 000 ₴' id='test'></Card>
+            <Card key={"testKey"} title='Xiaomi Mi Electric Scooter' description='Швидкість > 20 км/г' id='test'></Card>
+            <Card key={"testKey"} title='Xiaomi Mi Electric Scooter Essential Black' description='19 000 ₴' id='test'></Card>
+            <Card key={"testKey"} title='Xiaomi Mi Electric Scooter' description='Швидкість > 20 км/г' id='test'></Card>
+            <Card key={"testKey"} title='Xiaomi Mi Electric Scooter Essential Black' description='19 000 ₴' id='test'></Card>
+            <Card key={"testKey"} title='Xiaomi Mi Electric Scooter' description='Швидкість > 20 км/г' id='test'></Card>
+            <Card key={"testKey"} title='Xiaomi Mi Electric Scooter Essential Black' description='19 000 ₴' id='test'></Card>
+            <Card key={"testKey"} title='Xiaomi Mi Electric Scooter' description='Швидкість > 20 км/г' id='test'></Card>
+            <Card key={"testKey"} title='Xiaomi Mi Electric Scooter Essential Black' description='19 000 ₴' id='test'></Card>
           </div>
         </section>
         <section className={style.special_offer}>
@@ -75,10 +79,10 @@ export default function Home() {
           <h1 className={style.recommended__title}>Рекомендовані товари</h1>
           <div className={style.recommended__line}></div>
           <div className={style.recommended__goods}>
-            <Card></Card>
-            <Card></Card>
-            <Card></Card>
-            <Card></Card>
+            <Card key={"testKey"} title='Xiaomi Mi Electric Scooter' description='Швидкість > 20 км/г' id='test'></Card>
+            <Card key={"testKey"} title='Xiaomi Mi Electric Scooter Essential Black' description='19 000 ₴' id='test'></Card>
+            <Card key={"testKey"} title='Xiaomi Mi Electric Scooter' description='Швидкість > 20 км/г' id='test'></Card>
+            <Card key={"testKey"} title='Xiaomi Mi Electric Scooter Essential Black' description='19 000 ₴' id='test'></Card>
           </div>
         </section>
         <section className={style.brandmark}>

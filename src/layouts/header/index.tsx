@@ -29,7 +29,7 @@ const header = () => {
           <Link href={"/about"} className={style.header__nav_list_link}>Про нас</Link>
           </li>
           <li>
-          <Link href="" className={style.header__nav_list_link}>Контакти</Link>
+          <Link href={"/contacts"} className={style.header__nav_list_link}>Контакти</Link>
           </li>
           <li>
             <select className={style.header__nav_list_select} name="" id="">

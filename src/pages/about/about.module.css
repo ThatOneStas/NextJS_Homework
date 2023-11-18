@@ -219,6 +219,7 @@
     font-weight: 500;
     line-height: normal;
     cursor: pointer;
+    transition: 0.2s;
 }
 
 .form__submit:hover {
