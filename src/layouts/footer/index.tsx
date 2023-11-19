@@ -22,10 +22,10 @@ const footer = () => {
       </ul>
       <Link href={"/"} className={style.footer__logo}>Logo</Link>
       <ul className={style.footer__links_1}>
-        <li><a href="">Товари</a></li>
-        <li><a href="">Про нас</a></li>
-        <li><a href="">Контакти</a></li>
-        <li><a href="">Торгові марки</a></li>
+        <li><Link href="">Товари</Link></li>
+        <li><Link href="/about">Про нас</Link></li>
+        <li><Link href="/contacts">Контакти</Link></li>
+        <li><Link href="">Торгові марки</Link></li>
       </ul>
       <ul className={style.footer__links_2}>
         <li><a href="">Зброя</a></li>

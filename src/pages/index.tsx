@@ -4,6 +4,7 @@ import Link from 'next/link'
 import style from '@/styles/Home.module.css'
 // components
 import Card from '@/components/card'
+import Form from '@/components/form'
 // imgs
 import Image from 'next/image'
 
@@ -12,6 +13,15 @@ import Pngegg_1 from "@/assets/img/pngegg (20) 1.png"
 import Pngegg_2 from "@/assets/img/pngegg (19).png"
 import Group from "@/assets/img/Group.png"
 import Logo from "@/assets/img/logo.png"
+
+import Map from "@/assets/img/карти.png"
+import Location from "@/assets/img/Location.png"
+import Call from "@/assets/img/Call main.png"
+import Time from "@/assets/img/Time Circle main.png"
+
+import FB from "@/assets/img/Vector contacts.png"
+import TG from "@/assets/img/Subtract contacts.png"
+import INST from "@/assets/img/Group 3 contacts.png"
 
 export default function Home() {
   const data = [
@@ -98,13 +108,30 @@ export default function Home() {
             <Image className={style.brandmark__logos_fisrst} src={Group} alt=''></Image>
           </div>
         </section>
-        <form className={style.form}>
-          <h1 className={style.form__title}>Виникли запитання?</h1>
-          <input className={style.form__name} type="text" placeholder='Ваше ім’я'/>
-          <input className={style.form__phone} type="text" placeholder='Номер телефону'/>
-          <label className={style.form__label} htmlFor="submit">Залиште заявку і ми Вам передзвонимо</label>
-          <button className={style.form__submit} type="submit" name='submit'>Надіслати</button>
-        </form>
+        <Form></Form>
+        <section className={style.location}>
+          <Image className={style.location__map} src={Map} alt=''></Image>
+          <div className={style.location__contacts}>
+            <h1 className={style.location__contacts_title}>Контакти</h1>
+            <div className={style.location__contacts_box}>
+              <Image className={style.location__contacts_box_img} src={Call} alt=''></Image>
+              <h2 className={style.location__contacts_box_text}>093 005 37 93</h2>
+            </div>
+            <div className={style.location__contacts_box}>
+              <Image className={style.location__contacts_box_img} src={Time} alt=''></Image>
+              <h2 className={style.location__contacts_box_text}>10:00 - 20:00</h2>
+            </div>
+            <div className={style.location__contacts_box}>
+              <Image className={style.location__contacts_box_img} src={Location} alt=''></Image>
+              <h2 className={style.location__contacts_box_text}>вул. Трускавецька 50</h2>
+            </div>
+            <ul className={style.location__contacts_list}>
+              <li><Link href="/"><Image className={style.location__contacts_list_item} src={FB} alt=""></Image></Link></li>
+              <li><Link href="/"><Image className={style.location__contacts_list_item} src={TG} alt=""></Image></Link></li>
+              <li><Link href="/"><Image className={style.location__contacts_list_item} src={INST} alt=""></Image></Link></li>
+            </ul>
+          </div>
+        </section>
       </main>
     </>
   )

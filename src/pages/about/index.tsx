@@ -2,6 +2,8 @@ import React from 'react'
 import style from "@/pages/about/about.module.css"
 // link
 import Link from 'next/link'
+// components
+import Form from '@/components/form'
 // imgs
 import Image from 'next/image'
 
@@ -50,13 +52,7 @@ const index = () => {
           </p>
         </div>
       </section>
-      <form className={style.form}>
-        <h1 className={style.form__title}>Виникли запитання?</h1>
-        <input className={style.form__name} type="text" placeholder='Ваше ім’я'/>
-        <input className={style.form__phone} type="text" placeholder='Номер телефону'/>
-        <label className={style.form__label} htmlFor="submit">Залиште заявку і ми Вам передзвонимо</label>
-        <button className={style.form__submit} type="submit" name='submit'>Надіслати</button>
-      </form>
+      <Form></Form>
     </div>
   
 }
